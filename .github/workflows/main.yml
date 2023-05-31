@@ -1,0 +1,10 @@
+name : MY
+on:
+  push:
+    branches:["development"]
+  pull_request:
+    branches:["development"]
+jobs:
+builds:
+  steps:
+      run: echo Hello, world!
