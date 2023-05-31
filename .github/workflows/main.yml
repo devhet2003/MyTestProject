@@ -1,10 +1,12 @@
 name : MY
 on:
   push:
-    branches:["development"]
+    branches:[ "development" ]
   pull_request:
-    branches:["development"]
+    branches:[ "development" ]
 jobs:
-builds:
+build:
+ runs-on: ubuntu-latest
   steps:
+    - name: Run a one-line script
       run: echo Hello, world!
